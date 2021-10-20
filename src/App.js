@@ -42,7 +42,7 @@ function SignIn() {
 
   return (
     <>
-      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
+      <button type="button" className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
       <p>Do not violate the community guidelines or you will be banned for life!</p>
     </>
   );
@@ -50,7 +50,7 @@ function SignIn() {
 
 function SignOut() {
   return auth.currentUser && (
-    <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
+    <button type="button" className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
   );
 }
 
